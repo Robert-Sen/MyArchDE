@@ -223,13 +223,7 @@ function _load_if_terminal {
 
         # Currently We are loading Starship and p10k prompts on start so users can see the prompt immediately
 
-        if command -v starship &>/dev/null; then
-            # ===== START Initialize Starship prompt =====
-            eval "$(starship init zsh)"
-            export STARSHIP_CACHE=$XDG_CACHE_HOME/starship
-            export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
-        # ===== END Initialize Starship prompt =====
-        elif [ -r $HOME/.p10k.zsh ]; then
+        if [ -r $HOME/.p10k.zsh ]; then
             # ===== START Initialize Powerlevel10k theme =====
             POWERLEVEL10K_TRANSIENT_PROMPT=same-dir
             P10k_THEME=${P10k_THEME:-/usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme}
@@ -238,6 +232,12 @@ function _load_if_terminal {
             [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
         # ===== END Initialize Powerlevel10k theme =====
         fi
+        elif command -v starship &>/dev/null; then
+            # ===== START Initialize Starship prompt =====
+            eval "$(starship init zsh)"
+            export STARSHIP_CACHE=$XDG_CACHE_HOME/starship
+            export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
+        # ===== END Initialize Starship prompt =====
 
         # Optionally load user configuration // useful for customizing the shell without modifying the main file
         if [[ -f $HOME/.hyde.zshrc ]]; then

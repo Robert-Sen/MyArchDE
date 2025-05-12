@@ -1,22 +1,201 @@
 {
-    "workbench.colorTheme": "Wallbash",
-    "window.menuBarVisibility": "toggle",
-    "editor.fontSize": 12,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "security.workspace.trust.untrustedFiles": "newWindow",
-    "security.workspace.trust.startupPrompt": "never",
-    "security.workspace.trust.enabled": false,
-    "editor.minimap.side": "left",
-  "editor.fontFamily": "'JetbrainsMono Nerd Font','Maple Mono', monospace",
-    "extensions.autoUpdate": false,
-    "workbench.statusBar.visible": false,
-    "terminal.external.linuxExec": "kitty",
-    "terminal.explorerKind": "both",
-    "terminal.sourceControlRepositoriesKind": "both",
-    "telemetry.telemetryLevel": "off",
-    "workbench.activityBar.location": "top",
-    "window.customTitleBarVisibility": "auto",
-    "workbench.sideBar.location": "right"
-  }
-  
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.options.statusBarVisibility": "compact",
+    "editor.smoothScrolling": true,
+    "terminal.integrated.fontFamily": "'NotoSansM Nerd Font', monospace",
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "indentRainbow.indicatorStyle": "light",
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "off",
+            "strings": "on"
+        },
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    },
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-c>": false,
+        "<C-f>": false,
+        "<C-p>": false,
+        "<C-s>": false,
+        "<C-x>": false,
+    },
+    "// To improve performance": "",
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "editor.minimap.enabled": false,
+    "[verilog]": {
+        "editor.defaultFormatter": "bmpenuelas.systemverilog-formatter-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "lldb-dap.executable-path": "/usr/bin/lldb-dap",
+    "editor.mouseWheelScrollSensitivity": 1.5,
+    "terminal.integrated.mouseWheelScrollSensitivity": 1.5,
+    "workbench.colorTheme": "Quiet Light",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.linkedEditing": true,
+    "sqltools.useNodeRuntime": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "makefile.configureOnOpen": false,
+    "explorer.confirmPasteNative": false,
+    // latex configuration
+    // 鼠标悬停，预览公式时，支持 boldsymbol 宏
+    "latex-workshop.hover.preview.mathjax.extensions": [
+        "boldsymbol"
+    ],
+    // 是否启用 IntelliSense，自动补全引用的包中的环境和命令
+    "latex-workshop.intellisense.package.enabled": true,
+    // 编译后的文件输出目录
+    "latex-workshop.latex.outDir": "./tmp",
+    // 默认编译引擎为上次使用的
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    // 预览复杂公式，使用时需要通过 command palette (命令面板) 打开
+    "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+    // 不允许弹窗显示错误信息
+    "latex-workshop.message.error.show": true,
+    // 不允许弹窗显示警告信息
+    "latex-workshop.message.warning.show": false,
+    // 预览 PDF 时，反转颜色
+    "latex-workshop.view.pdf.invert": 1,
+    // 预览 PDF 时，自动检测是否需要反转颜色
+    "latex-workshop.view.pdf.invertMode.enabled": "auto",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatexmk"
+            ]
+        },
+        {
+            "name": "PdfLaTeX",
+            "tools": [
+                "pdflatexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "args": [
+                "-synctex=1",
+                "-pdfxe",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "command": "latexmk",
+            "env": {},
+            "name": "xelatexmk"
+        },
+        {
+            "args": [
+                "-synctex=1",
+                "-pdf",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "command": "latexmk",
+            "env": {},
+            "name": "pdflatexmk"
+        }
+    ],
+    // "latex-workshop.formatting.latexindent.args": [
+    //     "-g",
+    //     "./%OUTDIR%/indent.log",
+    //     "%TMPFILE%",
+    //     "-y=defaultIndent: '%INDENT%'"
+    // ],
+    "latex-workshop.formatting.latex": "latexindent",
+    "indentRainbow.errorColor": "rgba(128,32,32,0.1)",
+    "cmake.showOptionsMovedNotification": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "lean4.alwaysAskBeforeInstallingLeanVersions": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+}

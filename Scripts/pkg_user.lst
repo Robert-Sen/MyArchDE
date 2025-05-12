@@ -1,0 +1,48 @@
+# ------------------------------ // Must have
+neovim
+lazygit
+tmux
+yazi
+make
+cmake
+gcc
+gdb
+clang
+llvm
+lldb
+
+# ------------------------------ // System
+wttrbar                           # for weather
+ddcui                             # GUI to control brightness for external monitors
+wl-screenrec                      # High performance hardware accelerated wlroots screen recorder // NO support for NVIDIA
+
+# ------------------------------ // Fonts
+nerd-fonts                        # Choose number 54 to install `ttf-noto-nerd`
+noto-fonts
+noto-fonts-emoji
+nerd-fonts-noto-sans-mono
+
+fcitx5-theme-macos12
+fcitx5-themes-candlelight
+
+# ------------------------------ // Music
+cava                              # audio visualizer
+spotify                           # proprietary music streaming service
+spicetify-cli                     # cli to customize spotify client
+
+
+# ------------------------------ // Applications
+kde-connect
+libreoffice-still
+discord
+slack-desktop
+telegram-desktop
+
+# ------------------------------ // For Chinese users
+clash-verge-rev-bin
+v2raya
+wechat
+linuxqq
+wemeet-wayland-screenshare-git
+noto-fonts-cjk
+fcitx5-chinese-addons

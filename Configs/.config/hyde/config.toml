@@ -1,3 +1,11 @@
 # Configuration file for HyDE
 # Environment variables should be on top
 # Updated config.toml file can be found at $HOME/.local/share/hyde/config.toml
+
+[waybar]
+font = "NotoSans Nerd Font"
+scale = 36
+
+[notification]
+font = "NotoSans Nerd Font"
+font_size = 10
