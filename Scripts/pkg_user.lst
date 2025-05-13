@@ -13,6 +13,8 @@ gdb
 clang
 llvm
 lldb
+docker
+docker-compose
 vscodium
 visual-studio-code-bin
 
@@ -20,6 +22,7 @@ visual-studio-code-bin
 wttrbar                           # for weather
 ddcui                             # GUI to control brightness for external monitors
 wl-screenrec                      # High performance hardware accelerated wlroots screen recorder // NO support for NVIDIA
+obs-studio
 
 # ------------------------------ // Fonts
 nerd-fonts                        # Choose number 54 to install `ttf-noto-nerd`
@@ -27,6 +30,7 @@ noto-fonts
 noto-fonts-emoji
 nerd-fonts-noto-sans-mono
 font-manager
+ttf-noto-emoji-monochrome
 
 # ------------------------------ // Input methods
 fcitx5
@@ -45,6 +49,7 @@ libreoffice-still
 discord
 slack-desktop
 telegram-desktop
+obsidian
 
 # ------------------------------ // For Chinese users
 clash-verge-rev-bin
