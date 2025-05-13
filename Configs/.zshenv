@@ -231,13 +231,13 @@ function _load_if_terminal {
             # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh
             [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
         # ===== END Initialize Powerlevel10k theme =====
-        fi
         elif command -v starship &>/dev/null; then
             # ===== START Initialize Starship prompt =====
             eval "$(starship init zsh)"
             export STARSHIP_CACHE=$XDG_CACHE_HOME/starship
             export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
         # ===== END Initialize Starship prompt =====
+        fi
 
         # Optionally load user configuration // useful for customizing the shell without modifying the main file
         if [[ -f $HOME/.hyde.zshrc ]]; then
