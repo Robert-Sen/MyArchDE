@@ -3,6 +3,9 @@ neovim
 lazygit
 tmux
 yazi
+google-chrome
+
+# ------------------------------ // Development
 make
 cmake
 gcc
@@ -10,6 +13,8 @@ gdb
 clang
 llvm
 lldb
+vscodium
+visual-studio-code-bin
 
 # ------------------------------ // System
 wttrbar                           # for weather
@@ -21,7 +26,11 @@ nerd-fonts                        # Choose number 54 to install `ttf-noto-nerd`
 noto-fonts
 noto-fonts-emoji
 nerd-fonts-noto-sans-mono
+font-manager
 
+# ------------------------------ // Input methods
+fcitx5
+fcitx5-configtool
 fcitx5-theme-macos12
 fcitx5-themes-candlelight
 
@@ -30,9 +39,8 @@ cava                              # audio visualizer
 spotify                           # proprietary music streaming service
 spicetify-cli                     # cli to customize spotify client
 
-
 # ------------------------------ // Applications
-kde-connect
+kdeconnect
 libreoffice-still
 discord
 slack-desktop
