@@ -13,6 +13,7 @@ gdb
 clang
 llvm
 lldb
+meson
 docker
 docker-compose
 vscodium
@@ -23,6 +24,8 @@ wttrbar                           # for weather
 ddcui                             # GUI to control brightness for external monitors
 wl-screenrec                      # High performance hardware accelerated wlroots screen recorder // NO support for NVIDIA
 obs-studio
+auto-cpufreq
+powertop
 
 # ------------------------------ // Fonts
 nerd-fonts                        # Choose number 54 to install `ttf-noto-nerd`
@@ -50,6 +53,7 @@ discord
 slack-desktop
 telegram-desktop
 obsidian
+goldendict
 
 # ------------------------------ // For Chinese users
 clash-verge-rev-bin
